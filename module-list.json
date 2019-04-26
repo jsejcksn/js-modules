@@ -1,0 +1,34 @@
+[
+  { "name": "getPlaceStatus",
+    "fileName": "get-place-status.js",
+    "version": "1.0.0"
+  },
+  { "name": "getRandomInt",
+    "fileName": "get-random-int.js",
+    "version": "1.0.0"
+  },
+  { "name": "isStringNumber",
+    "fileName": "is-string-number.js",
+    "version": "1.0.0"
+  },
+  { "name": "JSONbin",
+    "fileName": "jsonbin.js",
+    "version": "0.8.3"
+  },
+  { "name": "randomizeArray",
+    "fileName": "randomize-array.js",
+    "version": "1.0.0"
+  },
+  { "name": "shuffleArray",
+    "fileName": "shuffle-array.js",
+    "version": "1.0.0"
+  },
+  { "name": "xEl",
+    "fileName": "x-el.js",
+    "version": "1.0.0"
+  },
+  { "name": "xStyleSheet",
+    "fileName": "x-style-sheet.js",
+    "version": "1.0.0"
+  }
+]
