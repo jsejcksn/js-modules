@@ -136,6 +136,31 @@ function getRandomInt (max = 1, min = 0) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function html (tagName, attributes, ...childNodes) {
+  const el = document.createElement(tagName);
+  if (attributes) {
+    for (const [prop, value] of Object.entries(attributes)) {
+      if (prop === 'style' && (Array.isArray(value) || value instanceof Map)) {
+        for (const declaration of value) {
+          el.style.setProperty(...declaration);
+        }
+      }
+      else {
+        el.setAttribute(prop, value);
+      }
+    }
+  }
+  if (childNodes) {
+    for (let node of childNodes) {
+      if (typeof node === 'string') {
+        node = document.createTextNode(node);
+      }
+      el.appendChild(node);
+    }
+  }
+  return el;
+}
+
 function isStringNumber (str) {
   if (str.trim() !== '' && Number(str) === Number(str)) {
     return true;
@@ -461,6 +486,7 @@ const xStyleSheet = {
 export {
   getPlaceStatus,
   getRandomInt,
+  html,
   isStringNumber,
   JSONbin,
   randomizeArray,

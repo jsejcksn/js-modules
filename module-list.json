@@ -7,6 +7,10 @@
     "fileName": "get-random-int.js",
     "version": "1.0.0"
   },
+  { "name": "html",
+    "fileName": "html.js",
+    "version": "1.0.0"
+  },
   { "name": "isStringNumber",
     "fileName": "is-string-number.js",
     "version": "1.0.0"
