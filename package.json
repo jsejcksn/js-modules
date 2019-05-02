@@ -1,6 +1,6 @@
 {
   "name": "js-modules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Re-usable code",
   "main": "./dist/bundle.js",
   "scripts": {
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jsejcksn/js-modules/issues"
   },
-  "homepage": "https://github.com/jsejcksn/js-modules#readme"
+  "homepage": "https://github.com/jsejcksn/js-modules#readme",
+  "dependencies": {
+    "js-yaml": "^3.13.1"
+  }
 }

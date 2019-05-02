@@ -1,0 +1,36 @@
+- name: getPlaceStatus
+  fileName: get-place-status.js
+  versions:
+    - 1.0.0
+- name: getRandomInt
+  fileName: get-random-int.js
+  versions:
+    - 1.0.0
+- name: html
+  fileName: html.js
+  versions:
+    - 1.0.0
+- name: isStringNumber
+  fileName: is-string-number.js
+  versions:
+    - 1.0.0
+- name: JSONbin
+  fileName: jsonbin.js
+  versions:
+    - 0.8.3
+- name: randomizeArray
+  fileName: randomize-array.js
+  versions:
+    - 1.0.0
+- name: shuffleArray
+  fileName: shuffle-array.js
+  versions:
+    - 1.0.0
+- name: xEl
+  fileName: x-el.js
+  versions:
+    - 1.0.0
+- name: xStyleSheet
+  fileName: x-style-sheet.js
+  versions:
+    - 1.0.0

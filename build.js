@@ -1,7 +1,8 @@
 'use strict';
 
 const fs = require('fs');
-const modules = require('./module-list.json');
+const yaml = require('js-yaml');
+const modules = yaml.safeLoad(fs.readFileSync(`${__dirname}/module-list.yaml`, 'utf8'));
 
 let file = '';
 let bundle = `'use strict';\n\n`;
