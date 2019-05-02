@@ -9,11 +9,11 @@ let bundle = `'use strict';\n\n`;
 let bundleExports = 'export {\n';
 
 for (const module of modules) {
-  const data = fs.readFileSync(`./src/modules/${module.fileName}`, 'utf8');
+  const data = fs.readFileSync(`${__dirname}/src/modules/${module.fileName}`, 'utf8');
   bundle += `${data}\n`;
   bundleExports += `  ${module.name},\n`;
   file = `'use strict';\n\n${data}\nexport default ${module.name};\n`;
-  fs.writeFile(`./dist/modules/${module.fileName}`, file, (err) => {
+  fs.writeFile(`${__dirname}/dist/modules/${module.fileName}`, file, (err) => {
     if (err) throw err;
     console.log(`${module.name} has been saved`);
   });
@@ -21,7 +21,7 @@ for (const module of modules) {
 
 bundle += `${bundleExports}};\n`;
 
-fs.writeFile('./dist/bundle.js', bundle, (err) => {
+fs.writeFile(`${__dirname}/dist/bundle.js`, bundle, (err) => {
   if (err) throw err;
   console.log('Bundle has been saved');
 });
