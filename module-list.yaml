@@ -2,6 +2,7 @@
   pathName: get-place-status
   versions:
     - 1.0.0
+    - 1.0.1
 - name: getRandomInt
   pathName: get-random-int
   versions:
