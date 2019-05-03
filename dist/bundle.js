@@ -1,7 +1,6 @@
 // TO-DO: Remove this file after all external links to it are updated.
 'use strict';
 
-// v1.0.0
 function getPlaceStatus (place, getEventList, unixTimestamp = Date.now()) {
   if (!place || !place.opening_hours || !place.opening_hours.periods || !place.utc_offset) {
     throw new Error('Required information is missing from place object');
@@ -134,12 +133,10 @@ function getPlaceStatus (place, getEventList, unixTimestamp = Date.now()) {
   return result;
 }
 
-// v1.0.0
 function getRandomInt (max = 1, min = 0) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// v1.0.0
 function html (tagName, attributes, ...childNodes) {
   const el = document.createElement(tagName);
   if (attributes) {
@@ -165,7 +162,6 @@ function html (tagName, attributes, ...childNodes) {
   return el;
 }
 
-// v1.0.0
 function isStringNumber (str) {
   if (str.trim() !== '' && Number(str) === Number(str)) {
     return true;
@@ -173,7 +169,6 @@ function isStringNumber (str) {
   else return false;
 }
 
-// v0.8.3
 class JSONbin {
   constructor (secretKey) {
     if (secretKey) {
@@ -349,7 +344,6 @@ class JSONbin {
   }
 }
 
-// v1.0.0
 function randomizeArray (array) {
   const randomized = [];
   for (let i = 0, j = array.length; i < j; i++) {
@@ -360,7 +354,6 @@ function randomizeArray (array) {
   }
 }
 
-// v1.0.0
 function shuffleArray (array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -368,7 +361,6 @@ function shuffleArray (array) {
   }
 }
 
-// v1.0.0
 const xEl = {
   gen (tagName, attributes, ...childNodes) {
     const el = document.createElement(tagName);
@@ -478,7 +470,6 @@ const xEl = {
   },
 };
 
-// v1.0.0
 const xStyleSheet = {
   gen (rules, parentEl = document.head) {
     const style = parentEl.appendChild(document.createElement('style'));
@@ -494,13 +485,13 @@ const xStyleSheet = {
 };
 
 export {
-  getPlaceStatus,
-  getRandomInt,
-  html,
-  isStringNumber,
-  JSONbin,
-  randomizeArray,
-  shuffleArray,
-  xEl,
-  xStyleSheet,
+  getPlaceStatus, // v1.0.0
+  getRandomInt, // v1.0.0
+  html, // v1.0.0
+  isStringNumber, // v1.0.0
+  JSONbin, // v0.8.3
+  randomizeArray, // v1.0.0
+  shuffleArray, // v1.0.0
+  xEl, // v1.0.0
+  xStyleSheet, // v1.0.0
 };

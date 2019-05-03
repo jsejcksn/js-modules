@@ -28,8 +28,8 @@ for (const module of modules) {
       console.log(`${module.name}@${version} has been saved`);
     });
     if (index === versions.length - 1) {
-      bundle += `// v${version}\n${data}\n`;
-      bundleExports += `  ${module.name},\n`;
+      bundle += `${data}\n`;
+      bundleExports += `  ${module.name}, // v${version}\n`;
     }
   }
 }
