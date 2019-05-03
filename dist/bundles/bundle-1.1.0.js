@@ -1,4 +1,3 @@
-// TO-DO: Remove this file after all external links to it are updated.
 'use strict';
 
 // v1.0.0
