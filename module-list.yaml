@@ -1,3 +1,7 @@
+- name: Err0r
+  pathName: err0r
+  versions:
+    - 1.0.0
 - name: getPlaceStatus
   pathName: get-place-status
   versions:
